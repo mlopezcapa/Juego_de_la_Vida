@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Principal {
 	public static void main(String[] args) {
 
-		final String RUTA_LECTURA = "C:\\Users\\USER\\Desktop\\pruebaJV.txt"; // No funciona con archivos.csv, solo con
+		final String RUTA_LECTURA = "src/ficheros/pruebaJV.txt"; 
 		final int MAX_GENERACIONES = 10;
 		int generaciones = 1;
 		Scanner sc = new Scanner(System.in);
@@ -16,7 +16,7 @@ public class Principal {
 		Juego juego1 = new Juego(valores);
 
 		Utilidades.mostrarMatriz(juego1.getTablero1());
-		System.out.println(" ");
+		System.out.println("Intro para continuar las generaciones. Max. 10");
 		Utilidades.mostrarMatriz(juego1.getTablero2());
 		sc.nextLine();
 		while (generaciones < MAX_GENERACIONES) {
